@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">KanishKhan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="theme-toggle" onclick="toggleTheme()">
+          <span id="theme-icon">☀️</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">KanishKhan</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Profile__.jpg" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">KanishKhan</h1>
+      <p class="section__text__p2">Aspiring Web Developer | Pre-Final Year CSE Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/KANISHKHANRESUME.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/kanish-khan-688145253/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+
+        <a href="https://github.com/Kanishkhan" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" />
+        </a>
+        <a href="https://leetcode.com/u/kanishkhan/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/leetcode_.png" alt="My LeetCode profile" class="icon" />
+        </a>
+
+
+
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+      <div class="section__pic-container">
+        <!--
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        -->
+
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+
+            <h3>Experience</h3>
+            <p>Front-end Development Intern <br />StaxTech, 1-Month Virtual Internship</p>
+
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Tech in Computer Science Engineering<br />Pre-Final Year Student</p>
+
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a Computer Science Engineering student with a strong interest in web development and data-driven
+            problem solving. I enjoy creating applications that are user-focused, efficient, and aligned with business
+            needs. I am passionate about understanding how data and technology support decision-making and enhance
+            real-world solutions. I learn quickly, work well in collaborative environments, and consistently aim to
+            contribute to meaningful and scalable projects.
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Full Stack Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML , css</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node.js</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+
+              <div>
+                <h3>Express.js</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Experienced</p>
+              </div>
+
+            </article>
+
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java
+
+                </h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="certifications">
+    <p class="section__text__p1">Achievements & Learning</p>
+    <h1 class="title">Certifications</h1>
+
+    <div class="certifications-container">
+
+      <a href="assets/Oracle_gen_ai.pdf" target="_blank" class="certificate-card">
+        <h3>Oracle Certified Professional – Generative AI</h3>
+        <p>Issued by Oracle University — 2025</p>
+      </a>
+
+      <a href="assets/Internshala.pdf" target="_blank" class="certificate-card">
+        <h3>Web Development with AI Training</h3>
+        <p>Issued by Internshala Trainings — 2024</p>
+      </a>
+
+      <a href="assets/DSA_Udemy.pdf" target="_blank" class="certificate-card">
+        <h3>Completed Data Structures & Algorithms in Python</h3>
+        <p>Issued by Udemy — 2023</p>
+      </a>
+
+      <a href="assets/AWS_DE_.pdf" target="_blank" class="certificate-card">
+        <h3>AWS Academy Data Engineering</h3>
+        <p>Issued by AWS Academy — 2025</p>
+      </a>
+
+      <a href="assets/AWS_ACA.pdf" target="_blank" class="certificate-card">
+        <h3>AWS Academy Cloud Architecting</h3>
+        <p>Issued by AWS Academy — 2024</p>
+      </a>
+
+    </div>
+  </section>
+
+
+
+
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+
+
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="experience-details-container">
+
+      <!-- ===== ROW 1 ===== -->
+      <div class="about-containers">
+        <!-- PROJECT 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project1.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Supply Chain</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Kanishkhan/Suppy_chain', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://supply-chain-blockchain.netlify.app/', '_blank')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project2.jpg" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Resource Scheduling</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/23CSE362-edge-computing-2025-26-odd/capstone-project-25_metaspark/tree/main/Code', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://marina-drive-dashboard.netlify.app/', '_blank')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project3.jpg" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Portable Weather Station</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Kanishkhan/Portable-Weather-Station', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://portable-weather-station.netlify.app/', '_blank')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== ROW 2 ===== -->
+      <div class="about-containers">
+        <!-- PROJECT 4 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project4.jpg" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Text Inter Engine</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Kanishkhan/textintel-engine', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://text-intel-engine.netlify.app/', '_blank')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project5.jpg" alt="Project 5" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Weather Data Analyzer</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Kanishkhan/weather-data-analyzer', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://weather-insight-ml.netlify.app/', '_blank')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Project6.jpg" alt="Project 6" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">CPU Scheduler</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Kanishkhan/CPU-Scheduler-Simulator', '_blank')">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://cpu-optimizer.netlify.app/', '_blank')">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:kanishkhan1209@gmail.com">kanishkhan1209@gmail.com</a></p>
+
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/kanish-khan-688145253/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Kanish Khan. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
