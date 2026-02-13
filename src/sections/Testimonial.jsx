@@ -4,7 +4,21 @@ import { reviews } from "../constants";
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ img, name, username, body, pdf }) => {
+  if (name === "Alice" || name === "Bob" || name === "Charlie" || name === "Jill") {
+    return (
+      <a
+        href={pdf}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={twMerge(
+          "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4 border-gray-50/[.1] bg-gradient-to-r bg-indigo to-storm hover:bg-royal hover-animation flex items-center justify-center text-center no-underline"
+        )}
+      >
+        <blockquote className="text-xl font-bold text-white">{body}</blockquote>
+      </a>
+    );
+  }
   return (
     <figure
       className={twMerge(
@@ -34,7 +48,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export default function Testimonial() {
   return (
     <div className="items-start mt-25 md:mt-35 c-space">
-      <h2 className="text-heading">Hear From My Clients</h2>
+      <h2 className="text-heading">My Certificates</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (

@@ -24,14 +24,20 @@ export const Timeline = ({ data }) => {
 
   return (
     <div className="c-space section-spacing" ref={containerRef}>
-      <h2 className="text-heading">My Work Experience</h2>
+      <h2 className="text-heading">My Career Journey</h2>
       <div ref={ref} className="relative pb-20">
         {data.map((item, index) => (
           <div
             key={index}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
-            <div className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="sticky z-40 flex flex-col items-center self-start max-w-xs md:flex-row top-40 lg:max-w-sm md:w-full"
+            >
               <div className="absolute flex items-center justify-center w-10 h-10 rounded-full -left-[15px] bg-midnight">
                 <div className="w-4 h-4 p-2 border rounded-full bg-neutral-800 border-neutral-700" />
               </div>
@@ -40,19 +46,25 @@ export const Timeline = ({ data }) => {
                 <h3 className="text-3xl text-neutral-400">{item.title}</h3>
                 <h3 className="text-3xl text-neutral-500">{item.job}</h3>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="relative w-full pl-20 pr-4 md:pl-4">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: false, amount: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+              className="relative w-full pl-20 pr-4 md:pl-4"
+            >
               <div className="block mb-4 text-2xl font-bold text-left text-neutral-300 md:hidden ">
                 <h3>{item.date}</h3>
                 <h3>{item.job}</h3>
               </div>
               {item.contents.map((content, index) => (
-                <p className="mb-3 font-normal text-neutral-400" key={index}>
+                <p className="mb-3 text-xl font-normal text-neutral-400" key={index}>
                   {content}
                 </p>
               ))}
-            </div>
+            </motion.div>
           </div>
         ))}
         <div

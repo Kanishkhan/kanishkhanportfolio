@@ -6,6 +6,7 @@ const ProjectDetails = ({
   image,
   tags,
   href,
+  live,
   closeModal,
 }) => {
   return (
@@ -26,7 +27,7 @@ const ProjectDetails = ({
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
           {subDescription.map((subDesc, index) => (
-            <p className="mb-3 font-normal text-neutral-400">{subDesc}</p>
+            <p key={index} className="mb-3 font-normal text-neutral-400">{subDesc}</p>
           ))}
           <div className="flex items-center justify-between mt-4">
             <div className="flex gap-3">
@@ -39,10 +40,28 @@ const ProjectDetails = ({
                 />
               ))}
             </div>
-            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
-              View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4" href={href} />
-            </a>
+            <div className="flex gap-4">
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 font-medium cursor-pointer text-white hover:text-gray-300 transition-colors"
+              >
+                Github
+                <img src="assets/arrow-up.svg" className="w-4 h-4 mb-1" alt="github" />
+              </a>
+              {live && (
+                <a
+                  href={live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 font-medium cursor-pointer text-white hover:text-gray-300 transition-colors"
+                >
+                  Live Demo
+                  <img src="assets/arrow-up.svg" className="w-4 h-4 mb-1" alt="live" />
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </motion.div>

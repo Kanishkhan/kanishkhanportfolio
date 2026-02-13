@@ -18,7 +18,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi I'm Ali
+          Hi I'm Kanishkhan
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
@@ -50,6 +50,83 @@ const HeroText = () => {
           >
             Web Solutions
           </motion.p>
+          <motion.p
+            className="mt-4 text-3xl font-normal text-white"
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 2.1 }}
+          >
+            I am a Pre-Final Year CSE Student
+          </motion.p>
+          <div className="flex flex-col items-start gap-8 mt-10">
+            <motion.div
+              className="flex gap-4"
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 2.4 }}
+            >
+              <a
+                href="/assets/KANISHKHANRESUME.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="px-8 py-3 text-lg font-semibold text-black transition-all bg-white rounded-full hover:scale-105"
+              >
+                View Resume
+              </a>
+              <a
+                href="#contact"
+                className="px-8 py-3 text-lg font-semibold text-white transition-all border-2 border-white/20 rounded-full hover:bg-white/10 hover:border-white/40"
+              >
+                Contact Info
+              </a>
+            </motion.div>
+            <motion.div
+              className="flex gap-10 px-2"
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 2.7 }}
+            >
+              <a
+                href="https://www.linkedin.com/in/kanishkhan/"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-transform hover:scale-110"
+              >
+                <img
+                  src="/assets/socials/linkedIn.svg"
+                  alt="LinkedIn"
+                  className="w-12 h-12"
+                />
+              </a>
+              <a
+                href="https://github.com/kanishkhan"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-transform hover:scale-110"
+              >
+                <img
+                  src="/assets/logos/github.svg"
+                  alt="GitHub"
+                  className="w-12 h-12 invert"
+                />
+              </a>
+              <a
+                href="https://leetcode.com/kanishkhan"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-transform hover:scale-110"
+              >
+                <img
+                  src="/assets/logos/leetcode.svg"
+                  alt="LeetCode"
+                  className="w-12 h-12"
+                />
+              </a>
+            </motion.div>
+          </div>
         </div>
       </div>
       {/* Mobile View */}
@@ -61,7 +138,7 @@ const HeroText = () => {
           animate="visible"
           transition={{ delay: 1 }}
         >
-          Hi,I'm Ali
+          Hi,I'm Kanishkhan
         </motion.p>
         <div>
           <motion.p
@@ -93,6 +170,80 @@ const HeroText = () => {
           >
             Web Applications
           </motion.p>
+          <motion.p
+            className="mt-6 text-2xl font-normal text-white"
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 2.1 }}
+          >
+            Pre-Final Year CSE Student
+          </motion.p>
+          <div className="flex flex-col items-center gap-8 mt-10">
+            <motion.div
+              className="flex flex-col w-full gap-4"
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 2.4 }}
+            >
+              <a
+                href="/assets/KANISHKHANRESUME.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="w-full px-6 py-3 text-lg font-semibold text-center text-black bg-white rounded-full"
+              >
+                View Resume
+              </a>
+              <a
+                href="#contact"
+                className="w-full px-6 py-3 text-lg font-semibold text-center text-white border-2 border-white/20 rounded-full bg-white/5"
+              >
+                Contact Info
+              </a>
+            </motion.div>
+            <motion.div
+              className="flex justify-center gap-12"
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 2.7 }}
+            >
+              <a
+                href="https://www.linkedin.com/in/kanishkhan/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/assets/socials/linkedIn.svg"
+                  alt="LinkedIn"
+                  className="w-12 h-12"
+                />
+              </a>
+              <a
+                href="https://github.com/kanishkhan"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/assets/logos/github.svg"
+                  alt="GitHub"
+                  className="w-12 h-12 invert"
+                />
+              </a>
+              <a
+                href="https://leetcode.com/kanishkhan"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/assets/logos/leetcode.svg"
+                  alt="LeetCode"
+                  className="w-12 h-12"
+                />
+              </a>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
