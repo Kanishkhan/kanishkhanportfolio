@@ -12,7 +12,7 @@ function Contact() {
                 </div>
                 <div className="contact-info-container">
                     <img src="/assets/linkedin.png" alt="LinkedIn icon" className="icon contact-icon" />
-                    <p><a href="https://www.linkedin.com/in/kanish-khan-688145253/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                    <p><a href="https://www.linkedin.com/in/kanishkhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                 </div>
             </div>
         </section>

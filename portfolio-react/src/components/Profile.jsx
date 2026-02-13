@@ -22,7 +22,7 @@ function Profile() {
                     </button>
                 </div>
                 <div id="socials-container">
-                    <a href="https://www.linkedin.com/in/kanish-khan-688145253/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/kanishkhan/" target="_blank" rel="noopener noreferrer">
                         <img src="/assets/linkedin.png" alt="My LinkedIn profile" className="icon" />
                     </a>
                     <a href="https://github.com/Kanishkhan" target="_blank" rel="noopener noreferrer">
