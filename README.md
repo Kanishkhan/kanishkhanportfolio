@@ -1,6 +1,9 @@
 # 👨‍💻 Kanish Khan - Portfolio
 
-Welcome to my personal portfolio repository! This project showcases my journey, skills, and projects as a Computer Science Engineering student and Aspiring Full-Stack Web Developer.
+Welcome to my personal portfolio repository! This project showcases my journey, skills, and projects as a Computer Science Engineering student and Aspiring Full-Stack Web Developer. 
+
+> [!NOTE]
+> This repository now features a modern **React + Vite** version of the portfolio in the `portfolio-react` directory, which is the primary version of the site.
 
 ## 🚀 Live Demo
 **[View Live Portfolio](https://kanishkhanportfolio.netlify.app/)**
@@ -12,7 +15,7 @@ I am a Pre-Final Year B.Tech CSE student passionate about building scalable, use
 
 ## 🔗 Connect with Me
 -   📧 **Email:** [kanishkhan1209@gmail.com](mailto:kanishkhan1209@gmail.com)
--   🔗 **LinkedIn:** [Kanish Khan](https://www.linkedin.com/in/kanish-khan-688145253/)
+-   🔗 **LinkedIn:** [Kanish Khan](https://www.linkedin.com/in/kanishkhan/)
 -   🐙 **GitHub:** [Kanishkhan](https://github.com/Kanishkhan)
 -   💻 **LeetCode:** [kanishkhan](https://leetcode.com/u/kanishkhan/)
 
@@ -28,6 +31,7 @@ I am a Pre-Final Year B.Tech CSE student passionate about building scalable, use
 
 ### **Frontend Development**
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -42,13 +46,23 @@ I am a Pre-Final Year B.Tech CSE student passionate about building scalable, use
 ## 📂 Repository Structure
 This repository contains two versions of my portfolio:
 
-1.  **React Version** (`/portfolio-react`)
-    -   A modern, component-based migration of the portfolio using **React** and **Vite**.
-    -   Features distinct components (Navbar, About, Experience, Projects) and state management.
+1.  **React Version** (`/portfolio-react`) - **Primary**
+    -   A modern, component-based migration using **React** and **Vite**.
+    -   Features smooth animations, theme toggling, and modular components.
+    -   Optimized for deployment with `netlify.toml` in the root.
 
 2.  **Static Version** (Root Directory)
-    -   The original version built with **HTML**, **CSS**, and **Vanilla JavaScript**.
-    -   Includes `index.html`, `style.css`, and `script.js`.
+    -   The original legacy version built with **HTML**, **CSS**, and **Vanilla JavaScript**.
+
+---
+
+## ⚙️ Deployment
+This project is configured for seamless deployment on services like Netlify or Vercel. 
+
+The `netlify.toml` in the root ensures that:
+-   The **Base Directory** is set to `portfolio-react`.
+-   The **Build Command** is `npm run build`.
+-   The **Publish Directory** is `portfolio-react/dist`.
 
 ---
 
@@ -57,10 +71,10 @@ This repository contains two versions of my portfolio:
 | Project | Description | Links |
 | :--- | :--- | :--- |
 | **Supply Chain** | Blockchain-based supply chain management system. | [Live](https://supply-chain-blockchain.netlify.app/) • [GitHub](https://github.com/Kanishkhan/Suppy_chain) |
-| **Resource Scheduling** | MetaSpark Capstone project for efficient resource management. | [Live](https://marina-drive-dashboard.netlify.app/) • [GitHub](https://github.com/23CSE362-edge-computing-2025-26-odd/capstone-project-25_metaspark/tree/main/Code) |
-| **Portable Weather Station** | IoT-based weather monitoring system. | [Live](https://portable-weather-station.netlify.app/) • [GitHub](https://github.com/Kanishkhan/Portable-Weather-Station) |
+| **Resource Scheduling** | MetaSpark Capstone project for efficient resource management. | [Live](https://marina-drive-dashboard.netlify.app/) • [GitHub](https://github.com/Kanishkhan/Edge-Data-Processing-Platform) |
+| **SecureSubmit** | Secure assignment submission and evaluation system. | [Live](https://secure-assignment-system.vercel.app/) • [GitHub](https://github.com/Kanishkhan/secure-assignment-system) |
 | **Text Intel Engine** | Intelligent text analysis and processing tool. | [Live](https://text-intel-engine.netlify.app/) • [GitHub](https://github.com/Kanishkhan/textintel-engine) |
-| **Weather Insight ML** | Machine learning model for weather data analysis. | [Live](https://weather-insight-ml.netlify.app/) • [GitHub](https://github.com/Kanishkhan/weather-data-analyzer) |
+| **User Interface Design** | Advanced UI/UX designs for modern web applications. | [Live](https://nrgk-fashion.netlify.app/) • [GitHub](https://github.com/Kanishkhan/User-Interface-Design-Project) |
 | **CPU Scheduler** | Simulator for various CPU scheduling algorithms. | [Live](https://cpu-optimizer.netlify.app/) • [GitHub](https://github.com/Kanishkhan/CPU-Scheduler-Simulator) |
 
 ---

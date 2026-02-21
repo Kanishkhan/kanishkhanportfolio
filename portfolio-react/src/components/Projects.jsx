@@ -9,6 +9,7 @@ function Projects() {
 
                 {/* Row 1 */}
                 <div className="about-containers">
+                    {/* Project 1 */}
                     <div className="details-container color-container">
                         <div className="article-container">
                             <img src="/assets/Project1.jpg" alt="Project 1" className="project-img" />
@@ -23,13 +24,14 @@ function Projects() {
                             </button>
                         </div>
                     </div>
+                    {/* Project 2 */}
                     <div className="details-container color-container">
                         <div className="article-container">
                             <img src="/assets/Project2.jpg" alt="Project 2" className="project-img" />
                         </div>
                         <h2 className="experience-sub-title project-title">Resource Scheduling</h2>
                         <div className="btn-container">
-                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/23CSE362-edge-computing-2025-26-odd/capstone-project-25_metaspark/tree/main/Code', '_blank')}>
+                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/Kanishkhan/Edge-Data-Processing-Platform', '_blank')}>
                                 Github
                             </button>
                             <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://marina-drive-dashboard.netlify.app/', '_blank')}>
@@ -37,16 +39,17 @@ function Projects() {
                             </button>
                         </div>
                     </div>
+                    {/* Project 3 */}
                     <div className="details-container color-container">
                         <div className="article-container">
-                            <img src="/assets/Project3.jpg" alt="Project 3" className="project-img" />
+                            <img src="/assets/secure.png" alt="Project 3" className="project-img" />
                         </div>
-                        <h2 className="experience-sub-title project-title">Portable Weather Station</h2>
+                        <h2 className="experience-sub-title project-title">SecureSubmit</h2>
                         <div className="btn-container">
-                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/Kanishkhan/Portable-Weather-Station', '_blank')}>
+                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/Kanishkhan/secure-assignment-system', '_blank')}>
                                 Github
                             </button>
-                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://portable-weather-station.netlify.app/', '_blank')}>
+                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://secure-assignment-system.vercel.app/', '_blank')}>
                                 Live Demo
                             </button>
                         </div>
@@ -55,6 +58,7 @@ function Projects() {
 
                 {/* Row 2 */}
                 <div className="about-containers">
+                    {/* Project 4 */}
                     <div className="details-container color-container">
                         <div className="article-container">
                             <img src="/assets/Project4.jpg" alt="Project 4" className="project-img" />
@@ -69,20 +73,22 @@ function Projects() {
                             </button>
                         </div>
                     </div>
+                    {/* Project 5 */}
                     <div className="details-container color-container">
                         <div className="article-container">
-                            <img src="/assets/Project5.jpg" alt="Project 5" className="project-img" />
+                            <img src="/assets/Project6.png" alt="User Interface Design" className="project-img" />
                         </div>
-                        <h2 className="experience-sub-title project-title">Weather Data Analyzer</h2>
+                        <h2 className="experience-sub-title project-title">User Interface Design</h2>
                         <div className="btn-container">
-                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/Kanishkhan/weather-data-analyzer', '_blank')}>
+                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://github.com/Kanishkhan/User-Interface-Design-Project', '_blank')}>
                                 Github
                             </button>
-                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://weather-insight-ml.netlify.app/', '_blank')}>
+                            <button className="btn btn-color-2 project-btn" onClick={() => window.open('https://nrgk-fashion.netlify.app/', '_blank')}>
                                 Live Demo
                             </button>
                         </div>
                     </div>
+                    {/* Project 6 */}
                     <div className="details-container color-container">
                         <div className="article-container">
                             <img src="/assets/Project6.jpg" alt="Project 6" className="project-img" />
@@ -103,7 +109,7 @@ function Projects() {
                 src="/assets/arrow.png"
                 alt="Arrow icon"
                 className="icon arrow"
-                onClick={() => (window.location.href = './#contact')}
+                onClick={() => (window.location.href = '#contact')}
             />
         </section>
     );

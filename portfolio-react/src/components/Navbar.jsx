@@ -18,8 +18,56 @@ function Navbar({ toggleTheme, isDarkMode }) {
                         <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li id="theme-toggle" onClick={toggleTheme}>
-                            <span id="theme-icon">{isDarkMode ? '🌙' : '☀️'}</span>
+                        <li className="theme-switch-wrapper">
+                            <label className="theme-switch" htmlFor="checkbox">
+                                <input
+                                    type="checkbox"
+                                    id="checkbox"
+                                    onChange={toggleTheme}
+                                    checked={isDarkMode}
+                                />
+                                <div
+                                    className="slider round"
+                                    onMouseDown={(e) => {
+                                        const startX = e.clientX;
+                                        const handleMouseMove = (moveEvent) => {
+                                            const diff = moveEvent.clientX - startX;
+                                            if (Math.abs(diff) > 20) {
+                                                if ((diff > 0 && !isDarkMode) || (diff < 0 && isDarkMode)) {
+                                                    toggleTheme();
+                                                    document.removeEventListener('mousemove', handleMouseMove);
+                                                }
+                                            }
+                                        };
+                                        const handleMouseUp = () => {
+                                            document.removeEventListener('mousemove', handleMouseMove);
+                                            document.removeEventListener('mouseup', handleMouseUp);
+                                        };
+                                        document.addEventListener('mousemove', handleMouseMove);
+                                        document.addEventListener('mouseup', handleMouseUp);
+                                    }}
+                                    onTouchStart={(e) => {
+                                        const startX = e.touches[0].clientX;
+                                        const handleTouchMove = (moveEvent) => {
+                                            const diff = moveEvent.touches[0].clientX - startX;
+                                            if (Math.abs(diff) > 20) {
+                                                if ((diff > 0 && !isDarkMode) || (diff < 0 && isDarkMode)) {
+                                                    toggleTheme();
+                                                    document.removeEventListener('touchmove', handleTouchMove);
+                                                }
+                                            }
+                                        };
+                                        const handleTouchEnd = () => {
+                                            document.removeEventListener('touchmove', handleTouchMove);
+                                            document.removeEventListener('touchend', handleTouchEnd);
+                                        };
+                                        document.addEventListener('touchmove', handleTouchMove);
+                                        document.addEventListener('touchend', handleTouchEnd);
+                                    }}
+                                >
+                                    <span className="slider-icon">{isDarkMode ? '🌙' : '☀️'}</span>
+                                </div>
+                            </label>
                         </li>
                     </ul>
                 </div>
@@ -38,9 +86,54 @@ function Navbar({ toggleTheme, isDarkMode }) {
                         <li><a href="#certifications" onClick={toggleMenu}>Certifications</a></li>
                         <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
                         <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-                        <li><a href="#" onClick={(e) => { e.preventDefault(); toggleTheme(); toggleMenu(); }}>
-                            {isDarkMode ? 'Dark Mode 🌙' : 'Light Mode ☀️'}
-                        </a></li>
+                        <li className="theme-switch-wrapper mobile-theme-switch">
+                            <label className="theme-switch" htmlFor="mobile-checkbox">
+                                <input type="checkbox" id="mobile-checkbox" onChange={() => { toggleTheme(); toggleMenu(); }} checked={isDarkMode} />
+                                <div
+                                    className="slider round"
+                                    onMouseDown={(e) => {
+                                        const startX = e.clientX;
+                                        const handleMouseMove = (moveEvent) => {
+                                            const diff = moveEvent.clientX - startX;
+                                            if (Math.abs(diff) > 20) {
+                                                if ((diff > 0 && !isDarkMode) || (diff < 0 && isDarkMode)) {
+                                                    toggleTheme();
+                                                    toggleMenu();
+                                                    document.removeEventListener('mousemove', handleMouseMove);
+                                                }
+                                            }
+                                        };
+                                        const handleMouseUp = () => {
+                                            document.removeEventListener('mousemove', handleMouseMove);
+                                            document.removeEventListener('mouseup', handleMouseUp);
+                                        };
+                                        document.addEventListener('mousemove', handleMouseMove);
+                                        document.addEventListener('mouseup', handleMouseUp);
+                                    }}
+                                    onTouchStart={(e) => {
+                                        const startX = e.touches[0].clientX;
+                                        const handleTouchMove = (moveEvent) => {
+                                            const diff = moveEvent.touches[0].clientX - startX;
+                                            if (Math.abs(diff) > 20) {
+                                                if ((diff > 0 && !isDarkMode) || (diff < 0 && isDarkMode)) {
+                                                    toggleTheme();
+                                                    toggleMenu();
+                                                    document.removeEventListener('touchmove', handleTouchMove);
+                                                }
+                                            }
+                                        };
+                                        const handleTouchEnd = () => {
+                                            document.removeEventListener('touchmove', handleTouchMove);
+                                            document.removeEventListener('touchend', handleTouchEnd);
+                                        };
+                                        document.addEventListener('touchmove', handleTouchMove);
+                                        document.addEventListener('touchend', handleTouchEnd);
+                                    }}
+                                >
+                                    <span className="slider-icon">{isDarkMode ? '🌙' : '☀️'}</span>
+                                </div>
+                            </label>
+                        </li>
                     </div>
                 </div>
             </nav>

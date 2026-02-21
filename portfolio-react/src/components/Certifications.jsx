@@ -37,7 +37,7 @@ function Certifications() {
                 src="/assets/arrow.png"
                 alt="Arrow icon"
                 className="icon arrow"
-                onClick={() => window.location.href = './#projects'}
+                onClick={() => (window.location.href = '#projects')}
             />
         </section>
     );

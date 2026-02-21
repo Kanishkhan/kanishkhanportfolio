@@ -7,9 +7,6 @@ function About() {
             <h1 className="title">About Me</h1>
 
             <div className="section-container">
-                <div className="section__pic-container">
-                    {/* Image commented out in original HTML, keeping it that way or placeholder */}
-                </div>
                 <div className="about-details-container">
                     <div className="about-containers">
                         <div className="details-container">
@@ -25,7 +22,11 @@ function About() {
                     </div>
                     <div className="text-container">
                         <p>
-                            I am a Computer Science Engineering student with a strong interest in web development and data-driven problem solving. I enjoy creating applications that are user-focused, efficient, and aligned with business needs. I am passionate about understanding how data and technology support decision-making and enhance real-world solutions. I learn quickly, work well in collaborative environments, and consistently aim to contribute to meaningful and scalable projects.
+                            I am a Computer Science Engineering student with a strong interest in web development and data-driven
+                            problem solving. I enjoy creating applications that are user-focused, efficient, and aligned with business
+                            needs. I am passionate about understanding how data and technology support decision-making and enhance
+                            real-world solutions. I learn quickly, work well in collaborative environments, and consistently aim to
+                            contribute to meaningful and scalable projects.
                         </p>
                     </div>
                 </div>
@@ -34,7 +35,7 @@ function About() {
                 src="/assets/arrow.png"
                 alt="Arrow icon"
                 className="icon arrow"
-                onClick={() => (window.location.href = './#experience')}
+                onClick={() => (window.location.href = '#experience')}
             />
         </section>
     );
