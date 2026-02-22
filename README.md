@@ -82,5 +82,5 @@ The `netlify.toml` in the root ensures that:
 ## 📬 Get in Touch
 Feel free to reach out to me for collaborations or just to say hi!
 -   **Email:** [kanishkhan1209@gmail.com](mailto:kanishkhan1209@gmail.com)
--   **LinkedIn:** [Kanish Khan](https://www.linkedin.com/in/kanish-khan-688145253/)
+-   **LinkedIn:** [Kanish Khan](https://www.linkedin.com/in/kanishkhan)
 
