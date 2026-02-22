@@ -1,80 +1,90 @@
-# Kanishkhan | Full Stack Developer & AI Enthusiast
+# KanishKhan - Portfolio
 
-<div align="center">
-  <img src="public/assets/Profile__.jpg" alt="Kanishkhan Profile" width="200" style="border-radius: 50%;">
-  <h3>Aspiring Web Developer | Pre-Final Year CSE Student</h3>
-  <p>Building user-centric, efficient, and data-driven solutions with modern technologies.</p>
-</div>
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Demo-brightgreen)](https://kanishkhanportfolio.netlify.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-lightgrey)](https://github.com/Kanishkhan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/kanishkhan/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-orange)](https://leetcode.com/u/kanishkhan/)
 
----
+Professional portfolio showcasing my work as an aspiring Web Developer and CSE student.
 
 ## 🚀 About Me
 
-I am a Computer Science Engineering student passionate about web development and data-driven problem-solving. My focus is on creating applications that are user-focused, efficient, and aligned with business needs. I thrive in collaborative environments and am constantly learning new technologies to build scalable real-world solutions.
+I am a **Computer Science Engineering** student with a strong interest in web development and data-driven problem solving. I enjoy creating applications that are user-focused, efficient, and aligned with business needs.
+
+- 🎓 **Education:** B.Tech in Computer Science Engineering (Pre-Final Year)
+- 💼 **Experience:** Front-end Development Intern at StaxTech
+- 📧 **Contact:** [kanishkhan1209@gmail.com](mailto:kanishkhan1209@gmail.com)
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technical Stack
 
-### 🎨 Frontend & Backend
-- **Core:** HTML5, CSS3, JavaScript (ES6+), React 19
-- **Server-Side:** Node.js, Express.js
-- **Database:** SQL
+### Full Stack Development
+- **Languages:** HTML5, CSS3, JavaScript (ES6+)
+- **Frameworks/Libraries:** React, Node.js, Express.js
+- **Databases:** SQL
 
-### 💻 Programming Languages
-- **Proficient:** Python, Java
+### Programming Languages
+- **Proficient:** Java, Python
 - **Familiar:** C, C++
 
 ---
 
-## 📂 Featured Projects
+## 📂 Projects
 
-### 🔗 [Supply Chain Blockchain](https://github.com/Kanishkhan/Suppy_chain)
-- **Tech:** Blockchain, React, Node.js
-- **Live Demo:** [View Project](https://supply-chain-blockchain.netlify.app/)
-- *A transparent and secure supply chain tracking system integrated with blockchain technology.*
+### [Supply Chain](https://github.com/Kanishkhan/Suppy_chain)
+Supply chain management system built with blockchain technologies.
+- **Live Demo:** [Link](https://supply-chain-blockchain.netlify.app/)
 
-### 📊 [Edge Data Processing Platform](https://github.com/Kanishkhan/Edge-Data-Processing-Platform)
-- **Tech:** React, MARINA Scheduler, SUMO
-- **Live Demo:** [View Project](https://marina-drive-dashboard.netlify.app/)
-- *Real-time simulation dashboard for edge data processing and traffic management.*
+### [Resource Scheduling](https://github.com/Kanishkhan/Edge-Data-Processing-Platform)
+An Edge Data Processing Platform focusing on efficient resource scheduling.
+- **Live Demo:** [Link](https://marina-drive-dashboard.netlify.app/)
 
-### 🛡️ [SecureSubmit](https://github.com/Kanishkhan/secure-assignment-system)
-- **Tech:** React, Vercel, Advanced Validation
-- **Live Demo:** [View Project](https://secure-assignment-system.vercel.app/)
-- *A secure and reliable system for students to submit assignments with robust validation layers.*
+### [SecureSubmit](https://github.com/Kanishkhan/secure-assignment-system)
+A secure assignment submission system designed for integrity and ease of use.
+- **Live Demo:** [Link](https://secure-assignment-system.vercel.app/)
 
-### 🧠 [Text Intel Engine](https://github.com/Kanishkhan/textintel-engine)
-- **Tech:** NLP, Python, React
-- **Live Demo:** [View Project](https://text-intel-engine.netlify.app/)
-- *An intelligent engine leveraging Natural Language Processing for deep text analysis.*
+### [Text Intel Engine](https://github.com/Kanishkhan/textintel-engine)
+An intelligent engine for text processing and analysis.
+- **Live Demo:** [Link](https://text-intel-engine.netlify.app/)
 
-### ⏲️ [CPU Scheduler Simulator](https://github.com/Kanishkhan/CPU-Scheduler-Simulator)
-- **Tech:** JavaScript, CSS Animations
-- **Live Demo:** [View Project](https://cpu-optimizer.netlify.app/)
-- *A visual tool to understand and analyze different CPU scheduling algorithms.*
+### [User Interface Design](https://github.com/Kanishkhan/User-Interface-Design-Project)
+A modern, responsive fashion-focused UI design.
+- **Live Demo:** [Link](https://nrgk-fashion.netlify.app/)
 
----
-
-## 🎓 Certifications
-
-- **Oracle Certified Professional** – Generative AI (2025)
-- **AWS Academy** – Graduate, Data Engineering (2025)
-- **AWS Academy** – Graduate, Cloud Architecting (2024)
-- **Web Development with AI** – Internshala (2024)
-- **Data Structures & Algorithms in Python** – Udemy (2023)
+### [CPU Scheduler](https://github.com/Kanishkhan/CPU-Scheduler-Simulator)
+A simulator for various CPU scheduling algorithms.
+- **Live Demo:** [Link](https://cpu-optimizer.netlify.app/)
 
 ---
 
-## 🌐 Connect with Me
+## 🛠️ Local Development
 
-- **Live Portfolio:** [kanishkhan.netlify.app](https://kanishkhan.netlify.app)
-- **LinkedIn:** [linkedin.com/in/kanishkhan](https://www.linkedin.com/in/kanishkhan/)
-- **GitHub:** [github.com/Kanishkhan](https://github.com/Kanishkhan)
-- **LeetCode:** [leetcode.com/u/kanishkhan/](https://leetcode.com/u/kanishkhan/)
-- **Email:** [kanishkhan1209@gmail.com](mailto:kanishkhan1209@gmail.com)
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Kanishkhan/kanishkhanportfolio.git
+   cd kanishkhanportfolio
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
 ---
-<div align="center">
-  <i>Built with React + Vite | Deployed on Netlify</i>
-</div>
+
+## 📄 License
+
+This project is personal and developed by [KanishKhan](https://github.com/Kanishkhan).
