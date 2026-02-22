@@ -1,16 +1,57 @@
-# React + Vite
+# KanishKhan | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aspiring Web Developer | Pre-Final Year CSE Student
 
-Currently, two official plugins are available:
+A professional portfolio showcasing my journey in web development, data-driven problem solving, and software engineering. I focus on building user-centric, efficient applications with modern technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+Check out the live version of my portfolio here: **[kanishkhan.netlify.app](https://kanishkhan.netlify.app)**
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Full Stack Development
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+), React 19
+- **Backend:** Node.js, Express.js
+- **Database:** SQL
 
-## Expanding the ESLint configuration
+### Programming Languages
+- **Proficient:** Python, Java
+- **Basic:** C, C++
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Key Projects
+
+### [Supply Chain Blockchain](https://github.com/Kanishkhan/Suppy_chain)
+- **Live Demo:** [Link](https://supply-chain-blockchain.netlify.app/)
+- A blockchain-integrated supply chain tracking system.
+
+### [Edge Data Processing Platform](https://github.com/Kanishkhan/Edge-Data-Processing-Platform)
+- **Live Demo:** [Link](https://marina-drive-dashboard.netlify.app/)
+- A dashboard for MARINA Scheduler and SUMO integration simulation.
+
+### [SecureSubmit](https://github.com/Kanishkhan/secure-assignment-system)
+- **Live Demo:** [Link](https://secure-assignment-system.vercel.app/)
+- A secure assignment submission system with advanced validation.
+
+### [Text Intel Engine](https://github.com/Kanishkhan/textintel-engine)
+- **Live Demo:** [Link](https://text-intel-engine.netlify.app/)
+- NLP-driven engine for text analysis and intelligence.
+
+### [CPU Scheduler Simulator](https://github.com/Kanishkhan/CPU-Scheduler-Simulator)
+- **Live Demo:** [Link](https://cpu-optimizer.netlify.app/)
+- A simulator for visualizing and testing various CPU scheduling algorithms.
+
+## 🎓 Certifications
+- **Oracle Certified Professional** – Generative AI (2025)
+- **AWS Academy** – Data Engineering (2025)
+- **AWS Academy** – Cloud Architecting (2024)
+- **Web Development with AI Training** – Internshala (2024)
+- **Data Structures & Algorithms in Python** – Udemy (2023)
+
+## 🌐 Contact Profile
+- **LinkedIn:** [linkedin.com/in/kanishkhan](https://www.linkedin.com/in/kanishkhan/)
+- **GitHub:** [github.com/Kanishkhan](https://github.com/Kanishkhan)
+- **LeetCode:** [leetcode.com/u/kanishkhan/](https://leetcode.com/u/kanishkhan/)
+- **Email:** kanishkhan1209@gmail.com
+
+---
+*Built with React + Vite and deployed on Netlify.*
