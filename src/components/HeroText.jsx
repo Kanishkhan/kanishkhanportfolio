@@ -1,5 +1,5 @@
-import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
+import { FlipWords } from "./FlipWords";
 
 const HeroText = () => {
   const words = ["Secure", "Modern", "Scalable"];
@@ -57,7 +57,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 2.1 }}
           >
-            I am a Pre-Final Year CSE Student
+            I am a Final Year CSE Student
           </motion.p>
           <div className="flex flex-col items-start gap-8 mt-10">
             <motion.div
@@ -177,7 +177,7 @@ const HeroText = () => {
             animate="visible"
             transition={{ delay: 2.1 }}
           >
-            Pre-Final Year CSE Student
+            Final Year CSE Student
           </motion.p>
           <div className="flex flex-col items-center gap-8 mt-10">
             <motion.div
